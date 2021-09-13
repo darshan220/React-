@@ -1,38 +1,112 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0%;
+  padding: 0%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header{
+  flex:30%;
+  background-color: rgb(154, 192, 230);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header h1{
+  margin-bottom: 1px;
+}
+
+.inputdata{
+  display: flex;
+  flex-direction: column;
+}
+
+.header input{
+  width: 200px;
+  height: 30px;
+  border:rgb(154, 192, 230);
+  border-bottom-left-radius: 9px;
+  border-top-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px;
+  margin: 6px;
+  padding-left: 10px;
+  font-size: 17px;
+  border: 1.5px solid rgb(141, 203, 231);
+  margin-top: 3px;
+}
+
+.header button{
+  width: 80px;
+  height: 30px;
+  border:none;
+  background-color: #cccbcb;
+  border-bottom-left-radius: 9px;
+  border-top-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  border-top-right-radius: 9px;
+  padding-left: 6px;
+  margin-top: 4px;
+}
+
+.todolist{
+  flex: 70%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top:10px;
+}
+
+.task{
+  width: 500px;
+  height: 50px;
+  display: flex;
+  color: black;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* .task content {
+  flex: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task .content span {
+    display:ruby-base;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    border-right: none;
+    background-color: steelblue;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
 }
+
+.task button {
+  flex:20%;
+  border: none;
+  height: 100%;
+  background-color: rgb(109, 138, 135);
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border-top-left-radius: 7px;
+  cursor: pointer;
+} */

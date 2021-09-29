@@ -29,7 +29,7 @@ function Topbar() {
             </Center>
           </Heading>
         </Box>
-        <Box bg="#ff6262" height={73} display="flex" justifyContent="center">
+        <Box bg="#eb5757" height={73} display="flex" justifyContent="center">
 
         <TopbarWaveForm style={{paddingRight: "10px", marginTop: "20px"}}/>
 

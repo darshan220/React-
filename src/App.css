@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+.items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-wrapper{
+  height: 225px;
+  width: 300px;
+  border: 1px solid gray;
+}
+
+.btn{
+  text-transform: uppercase;
+	font-family: "Work Sans";
+	position: relative;
+	cursor: pointer;
+	background: #9e9d9d;
+	border: none;
+	border-radius: .4em;
+}
+
+.img-cart{
+  width: 100px;
+  height: 100px;
+  right: 1%;
+  top: 1%;
+  position: absolute;
+}

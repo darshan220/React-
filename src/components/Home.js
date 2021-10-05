@@ -1,12 +1,11 @@
 import React from 'react';
 import { images } from '../images/imgConstants'
 
-const Home = () => {
+
+const Home = (props) => {
+    console.warn("props",props.data);
     return (
         <div>
-            <div className="add-to-cart">
-                <img className="img-cart" src={images?.cart_img} />
-            </div>
             <h1>Home Component</h1>
         <div className="items"> 
             <div className="cart-wrapper">
@@ -23,7 +22,14 @@ const Home = () => {
                     </span>
                 </div>
                 <div className="btn-wrapper">
-                   <button className='btn'>Add to cart</button>
+                   <button onClick={()=> props.addToCartHandler({price: 899,name: 'Google pixel 6'})} 
+                    className='btn'>
+                       Add to cart
+                    </button>
+                    <button onClick={()=> props.removeToCartHandler()} 
+                    className='btn'>
+                       Remove to cart
+                    </button>
                 </div>
             </div>
         </div>

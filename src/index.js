@@ -3,16 +3,20 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
-import Store from "./ShoppingCart/redux/store";
-
-
+// import Store from "./ShoppingCart/redux/store";
+//------------------------------------//
+//Contact Book App imports
+import ContactReducer from "./contactApp/redux/reducer/ContactReducer";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import "react-toastify/dist/ReactToastify.css";
+import { composeWithDevTools } from "redux-devtools-extension";
+import { createStore } from "redux";
+
+const store = createStore(ContactReducer, composeWithDevTools());
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={Store}>
+    <Provider store={store}>
       <App />
     </Provider>
   </React.StrictMode>,
